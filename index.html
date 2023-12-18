@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>張乑JINGLE BELLS</title>
     <link rel="stylesheet" href="assets/index.css">
-    <script src="assets/index.js"></script>
+    <script src="./assets/index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
@@ -41,13 +41,32 @@
       </div>
     </header>
 
-    <section>
-        <div class="banner">
-            <img src="assets/image/cookie/product1.jpg">
-            <img src="assets/image/cookie/product3.jpg">
-            <img src="assets/image/cookie/product6.jpg">
-        </div>
-    </section>
+    <div class="slideshow-container">
+      
+      <div class="singleSlide fade">
+        <img
+          src="assets/image/banner/banner1.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="singleSlide fade">
+        <img
+          src="assets/image/banner/banner2.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="singleSlide fade">
+        <img
+          src="assets/image/banner/banner4.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <button class="prev" onclick="plusSlides(-1)">❮</button>
+      <button class="next" onclick="plusSlides(1)">❯</button>
+    </div>
   
     <h2>WHAT'S HOT?</h2> 
     <form>
