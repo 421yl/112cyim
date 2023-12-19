@@ -51,9 +51,9 @@ form {
 }
 
 .form-img {
-    max-width: 300px;
+    max-width: 75%;
     flex-wrap: wrap;
-    margin-top: 8%;
+    margin-top: 2%;
     border-radius: 3%;
     transition: transform 0.3s ease-in-out;
 }
@@ -64,7 +64,7 @@ form {
 
 .product {
     width: calc(30% - 20px);
-    margin: -10px;
+    margin: -1%;
     text-align: center;
 }
 
@@ -78,14 +78,18 @@ footer {
     height: fit-content;
 }
 
+.topic-title {
+    margin-left: 13%;
+    margin-top: 3%;
+    text-align: left;
+}
+
 h2 {
-    margin-left: 12%;
-    margin-top: 5%;
+    text-align: center;
 }
 
 .nav-title {
     position: relative;
-    height: 30px;
     width: 30%;
     margin-right: 15%;
 }
@@ -150,4 +154,10 @@ h2 {
 
 .nav-name .name:hover ul {
     display: block;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
