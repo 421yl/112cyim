@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="assets/style5.css">
+</head>
+<script>
+    function increaseQuantity(quantityId) {
+        var quantityElement = document.getElementById(quantityId);
+        var currentQuantity = parseInt(quantityElement.textContent);
+        quantityElement.textContent = currentQuantity + 1;
+        updateTotal();
+    }
+
+    function decreaseQuantity(quantityId) {
+        var quantityElement = document.getElementById(quantityId);
+        var currentQuantity = parseInt(quantityElement.textContent);
+        if (currentQuantity > 1) {
+            quantityElement.textContent = currentQuantity - 1;
+            updateTotal();
+        }
+    }
+
+    function updateTotal() {
+        
+    }
+</script>
+
+<boby>
+    <form action="action_page.php">
+        <div class="container">
+            <h1>購物車</h1>
+            <div class="item-container">
+                <input type="radio" id="photo1" name="photo" value="photo1">
+                <img src="https://picsum.photos/100/100?random" alt="照片1">
+                    <div class="item-details">
+                        <p>商品名稱：</p>
+                        <p>數量：<input type="button" value="-" class="quantity-btn" onclick="decreaseQuantity('quantity1')"> <span class="quantity" id="quantity1">1</span>  <input type="button" value="+" class="quantity-btn" onclick="increaseQuantity('quantity1')"></p>
+                        <p>價格：<span class="price" style="color:black"><b>NT$</b></span></p>
+                    </div>            
+            </div>
+            <br>
+            <div class="item-container">
+                <input type="radio" id="photo2" name="photo" value="photo2">
+                <img src="https://picsum.photos/100/100?random" alt="照片2">
+                    <div class="item-details">
+                        <p>商品名稱：</p>
+                        <p>數量：<input type="button" value="-" class="quantity-btn" onclick="decreaseQuantity('quantity1')"> <span class="quantity" id="quantity1">1</span>  <input type="button" value="+" class="quantity-btn" onclick="increaseQuantity('quantity1')"></p>
+                        <p>價格：<span class="price" style="color:black"><b>NT$</b></span></p>
+                    </div>
+            </div>
+            <hr>
+            <p>總數量：</p>
+            <hr>
+            <p>總金額：<span class="price" style="color:black"><b>NT$</b></span></p>
+
+            <div class="clearfix">
+                <button type="submit" class="signupbtn">立即結帳</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
