@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>張乑JINGLE BELLS</title>
     <link rel="stylesheet" href="assets/index.css">
-    <script src="assets/index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <div class="header">
       <span>張乑JINGLE BELLS</span>
       <div class="nav-title">
         <ul class="nav-name">  
@@ -39,34 +38,29 @@
         <span>|</span>
         <a href="#shopping">購物車</a>
       </div>
-    </header>
+    </div>
 
     <div class="slideshow-container">
-      <div class="singleSlide fade">
-        <img
-          src="assets/image/banner/banner1.jpg"
-          style="width: 100%"
-        />
+      <div class="singleSlide fade" style="display: none;">
+          <img src="assets/image/banner/banner1.jpg">
       </div>
 
-      <div class="singleSlide fade">
-        <img
-          src="assets/image/banner/banner2.jpg"
-          style="width: 100%"
-        />
+      <div class="singleSlide fade" style="display: none;">
+          <img src="assets/image/banner/banner2.jpg">
       </div>
 
-      <div class="singleSlide fade">
-        <img
-          src="assets/image/banner/banner4.jpg"
-          style="width: 100%"
-        />
+      <div class="singleSlide fade" style="display: none;">
+          <img src="assets/image/banner/banner4.jpg">
       </div>
+
       <button class="prev" onclick="plusSlides(-1)">❮</button>
       <button class="next" onclick="plusSlides(1)">❯</button>
     </div>
   
-    <h2>WHAT'S HOT?</h2> 
+
+    <div class="hot">
+      <h2>WHAT'S HOT?</h2> 
+    </div>
     <form>
         <div class="product">
           <a href="product.html" target="_blank"><img class="form-img" src="assets/image/cookie/product1.jpg"></a>
@@ -88,6 +82,7 @@
     <footer>
       &copy; 2023 蔡貽琳 李芸妘 鄭夙妙 陳柔恩 陳珊妮 黃維潔 李定緯
     </footer>
-  
+    <script src="assets/index.js"></script>
+
   </body>
   </html>
