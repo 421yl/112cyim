@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: left;
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+.item-container {
+    display: flex;
+    align-items: centee; 
+    width: 150%
+}
+
+
+.item-container img {
+    width: 180px;
+    height: auto; 
+}
+
+input[type="radio"]  {
+    margin-top: 80px;
+}
+
+.item-details {
+    flex-grow: 1; 
+    margin-left: 10px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    color: black;
+}
+
+
+button {
+    width: 30%;
+    margin-right: 100px; 
+    margin-left: 430px;
+}
+
+.quantity-btn {
+    font-size: 16px;
+    padding: 3px 8px;
+    cursor: pointer;
+}
