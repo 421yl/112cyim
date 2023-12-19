@@ -1,7 +1,7 @@
-h1{
+h1 {
     text-align: center;
-  }
-  
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -10,26 +10,41 @@ form {
     padding: 20px;
 }
 
-.container{
+.container {
     text-align: center;
+    text-decoration: none;
 }
 
-.container a{
+.container a {
     padding: 10px 10px;
     display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.signup {
+    text-align: center;
+    text-decoration: none;
+}
+
+.signup a {
+    padding: 10px 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
 }
 
 .label-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
 label {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
-button{
+button {
     width: 95%;
 }
