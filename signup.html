@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員註冊</title>
+    <link rel="stylesheet" href="assets/style3.css">
+</head>
+<body>
+    <form action="action_page.php">
+        <div class="container">
+            <h1>會員註冊</h1>
+            <div class="label-container"> 
+                <label for="name"><b>姓名:</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required><br>
+            </div>
+    
+            <div class="label-container">
+                <label><b>性別:</b></label>
+                <input type="radio" name="gender" value="male" >
+                <label for="male">男</label>
+    
+                <input type="radio" name="gender" value="female" >
+                <label for="female">女</label>
+            </div>
+    
+            <div class="label-container"> 
+                <label for="birthday"><b>生日:</b></label>
+                <input type="year" name="year" placeholder="YYYY" required>
+                <input type="month" name="month" placeholder="MM" required>
+                <input type="day" name="day" placeholder="DD" required>
+                <br>
+            </div>
+    
+            <div class="label-container"> 
+                <label for="phonenumber"><b>電話:</b></label>
+                <input type="text" placeholder="Enter Phone Number" name="phonenumber" required>
+            </div>
+    
+            <div class="label-container">
+                <label for="email"><b>郵件:</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            </div>
+    
+            <div class="label-container">
+                <label for="psw"><b>密碼:</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+            
+            <div class="label-container">
+                <label for="psw-repeat"><b>再次輸入密碼:</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
+            </div>
+    
+            <div class="label-container">
+                <label for="address"><b>地址:</b></label>
+                <input type="text" placeholder="Enter Address" name="address" required><br>
+            </div>
+    
+            <div class="label-container">
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> 記住我
+              </label>
+            </div>
+    
+            <div class="clearfix">
+                <button type="submit" class="signupbtn">加入會員</button>
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>
