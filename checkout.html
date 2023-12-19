@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳</title>
+    <link rel="stylesheet" href="assets/style4.css">
+</head>
+<body>
+    <form action="action_page.php">
+        <h1>結  帳</h1>
+        <div class="container">
+            <h3>訂單詳情</h3>
+            <div class="item-container">
+                <img src="https://picsum.photos/200/200?random" alt="商品照片">
+                <div class="item-details">
+                    <p>商品名稱：</p>
+                    <p>數量：<span class="quantity"></span></p>
+                    <p>價格：<span class="price" style="color:black"><b>NT$</b></span></p>
+                </div>
+            </div>
+            <hr>
+            <p>總數量：</p>
+            <hr>
+            <p>運費：<span class="price" style="color:black"><b>NT$60</b></span></p>
+            <hr>
+            <p>總金額：<span class="price" style="color:black"><b>NT$</b></span></p>
+            <hr>
+        </div>
+    
+        <div class="container">
+            <h3>寄送方式</h3>
+            <div class="container">
+                <a href="https://emap.pcsc.com.tw/ecmap/default.aspx" class="delivery-link" data-method="711">超商取貨(7-11)</a>
+                <a href="https://www.family.com.tw/Marketing/Map" class="delivery-link" data-method="familymart">超商取貨(全家)</a>
+            </div>
+            <hr>
+        </div>
+        
+        <div class="container">
+            <h3>付款方式</h3>
+                <input type="radio" name="pay" value="cash" id="cash">
+                <label for="cash">貨到付款</label>
+        </div>
+    
+        <div class="clearfix">
+            <button type="submit" class="signupbtn">下一頁</button>
+        </div>
+    </form>
+</body>
+</html>
