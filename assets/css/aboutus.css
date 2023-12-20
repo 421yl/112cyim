@@ -10,20 +10,12 @@ body {
     width: 100vw;
     max-width: 100vw;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.container {
-    flex: 1;
 }
 
 .header {
     background-color: #47896e;
     color: white;
-    padding: 20px 10%;
-    /* 修改 padding 為具體的像素值 */
+    padding: 1.5% 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +30,7 @@ body {
 
 .header-links {
     display: flex;
-    margin-right: 20%;
+    margin-right: 0%;
 }
 
 .header-links a,
@@ -62,8 +54,8 @@ footer {
 
 .nav-title {
     position: relative;
-    width: 30%;
-    margin-right: 20%;
+    width: 38%;
+    margin-right: 25%;
 }
 
 .name {
@@ -97,7 +89,7 @@ footer {
 .subname {
     display: block;
     position: absolute;
-    z-index: 2;
+    z-index: 1001;
 }
 
 .subname li a {
@@ -134,7 +126,6 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     padding: 40px 0;
-    margin-left: 5%;
 }
 
 @media screen and (min-width: 1200px) {
