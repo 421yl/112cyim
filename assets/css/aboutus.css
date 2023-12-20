@@ -151,7 +151,7 @@ footer {
     position: relative;
     width: 350px;
     height: 600px;
-    background: linear-gradient(#a4bfd5, #a4bfd5 30%, #708fb4 30%, #708fb4);
+    background: linear-gradient(#f0bdc3, #f0bdc3 30%, #6eb195 30%, #6eb195);
     margin: 10px;
     border-radius: 20px;
     overflow: hidden;
@@ -246,7 +246,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #324367;
+    background: #47896e;
     border-radius: 50%;
     font-size: 1.5em;
     color: #fff;
@@ -256,5 +256,5 @@ footer {
 
 .aboutus-part .card .content .details .social-icons li a:hover {
     transform: translateY(-2px) scale(1.15);
-    background: #3a5068;
+    background: #47896e;
 }

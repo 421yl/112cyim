@@ -137,7 +137,7 @@ h2 {
     align-items: center;
     padding: 20px;
     flex: 1;
-    margin-top: 3%;
+    margin-top: 0;
 }
 
 .product-details {
@@ -149,7 +149,7 @@ h2 {
 .product-image img {
     max-width: 50%;
     height: auto;
-    margin-left: 35%;
+    margin-left: 34%;
     border-radius: 2%;
 }
 
@@ -164,7 +164,7 @@ h2 {
 
 .product-info {
     width: 50%;
-    margin-right: 15%;
+    margin-right: 17%;
 }
 
 .add-to-cart,
@@ -234,7 +234,7 @@ h2 {
 .btn-numbox .count .num-jian,
 .btn-numbox .input-num,
 .btn-numbox .num-jia {
-    width: 360px;
+    width: 348px;
     height: 28px;
     line-height: 28px;
     text-align: center;
@@ -249,7 +249,7 @@ h2 {
 
 .product {
     width: calc(30% - 20px);
-    margin: 25px;
+    margin: 20px;
     text-align: center;
 }
 

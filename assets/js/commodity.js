@@ -12,7 +12,9 @@ num_jian.onclick = function() {
 
     if(input_num.value <= 0) {
         input_num.value = 0;
-    } else {
+    } 
+    
+    else {
 
         input_num.value = parseInt(input_num.value) - 1;
     }
