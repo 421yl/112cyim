@@ -4,16 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>結帳</title>
-    <link rel="stylesheet" href="assets/css/style4.css">
+    <title>聖誕YA</title>
+    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/image/aboutus/logo.png">
 </head>
+
 <body>
+    <div class="header">
+      <img class="header-logo" src="assets/image/aboutus/logo-name.jpg">
+      <div class="nav-title">
+        <ul class="nav-name">  
+            <li class="name"><a href="index.html">首頁</a>
+            <li class="name"><a href="index.html">所有商品</a>
+                <ul class="subname">
+                  <li><a href="product.html">ALL</a></li>
+                  <li><a href="decoration.html">Decoraction</a></li>
+                  <li><a href="wearing.html">Wearing</a></li>
+                  <li><a href="cookie.html">Cookie</a></li>
+                </ul>
+            </li>
+            <li class="name"><a href="aboutus.html">關於我們</a></li>
+            <li class="name"><a href="center.html">會員中心</a></li>
+        </ul>
+      </div>
+
+      <div class="header-links">
+        <a href="member.html">登入</a>
+        <span>|</span>
+        <a href="signup.html">註冊</a>
+        <span>|</span>
+        <a href="car.html">購物車</a>
+      </div>
+    </div>
+
     <form action="action_page.php">
         <h1>結  帳</h1>
         <div class="container">
             <h3>訂單詳情</h3>
             <div class="item-container">
-                <img src="https://picsum.photos/200/200?random" alt="商品照片">
+                <img src="assets/image/decoration/decoration1.jpg" alt="商品照片">
                 <div class="item-details">
                     <p>商品名稱：</p>
                     <p>數量：<span class="quantity"></span></p>
@@ -27,26 +59,28 @@
             <hr>
             <p>總金額：<span class="price" style="color:black"><b>NT$</b></span></p>
             <hr>
-        </div>
-    
-        <div class="container">
-            <h3>寄送方式</h3>
+            <p>寄送方式</p>
             <div class="container">
-                <a href="https://emap.pcsc.com.tw/ecmap/default.aspx" class="delivery-link" data-method="711">超商取貨(7-11)</a>
-                <a href="https://www.family.com.tw/Marketing/Map" class="delivery-link" data-method="familymart">超商取貨(全家)</a>
+                <br>
+                <input type="radio" name="send" value="send" id="cash"><a href="https://emap.pcsc.com.tw/ecmap/default.aspx" class="delivery-link" data-method="711">超商取貨(7-11)、</a>
+                <input type="radio" name="send" value="send" id="cash"><a href="https://www.family.com.tw/Marketing/Map" class="delivery-link" data-method="familymart">超商取貨(全家)</a>
             </div>
             <hr>
-        </div>
-        
-        <div class="container">
-            <h3>付款方式</h3>
+            <p>付款方式</p>
                 <input type="radio" name="pay" value="cash" id="cash">
                 <label for="cash">貨到付款</label>
         </div>
+    
     
         <div class="clearfix">
             <button type="submit" class="signupbtn">下一頁</button>
         </div>
     </form>
-</body>
-</html>
+
+    <footer>
+      &copy; 2023 蔡貽琳 李芸妘 鄭夙妙 陳柔恩 陳珊妮 黃維潔 李定緯
+    </footer>
+    <script src="assets/js/index.js"></script>
+
+  </body>
+  </html>

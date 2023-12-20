@@ -146,7 +146,7 @@ form {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    margin-top: -1%;
+    margin-top: -3%;
 }
 
 .item-container {
@@ -155,19 +155,14 @@ form {
     width: 150%
 }
 
-
 .item-container img {
-    width: 22%;
-    height: 22%;
-}
-
-input[type="radio"] {
-    margin-top: 80px;
+    width: 180px;
+    height: auto;
 }
 
 .item-details {
     flex-grow: 1;
-    margin-left: 3%;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -178,70 +173,12 @@ input[type="radio"] {
 
 
 button {
-    width: 30%;
-    margin-right: 100px;
-    margin-left: 430px;
+    width: 80%;
+    margin-right: 50px;
+    margin-left: 200px;
 }
 
-.quantity-btn {
-    font-size: 16px;
-    padding: 3px 8px;
-    cursor: pointer;
-}
-
-.quantity-btn {
-    /*
-    width: 28px;
-    height: 28px;
-    */
-    line-height: 28px;
-    text-align: center;
-    align-items: center;
-    font-size: 18px;
-    color: black;
-    cursor: pointer;
-    padding: 3px 8px;
-}
-
-.quantity-container {
-    display: flex;
-    align-items: center;
-}
-
-.btn-numbox {
-    overflow: hidden;
-    border: 1px solid #e6e6e6;
-}
-
-.btn-numbox li {
-    float: left;
-}
-
-.btn-numbox li .number,
-.kucun {
-    display: inline-block;
-    font-size: 12px;
-    color: #808080;
-    vertical-align: sub;
-}
-
-.btn-numbox .count {
-    overflow: hidden;
-    margin: 0 16px 0 -20px;
-}
-
-.btn-numbox .count .num-jian,
-.btn-numbox .input-num,
-.btn-numbox .num-jia {
-    width: 150px;
-    height: 28px;
-    line-height: 28px;
-    text-align: center;
-    font-size: 18px;
-    color: #999;
-    cursor: pointer;
-    border: 1px solid #e6e6e6;
-    display: inline-block;
-    margin: 0 8px;
-    align-items: center;
+.delivery-link {
+    text-decoration: none;
+    color: blue;
 }
