@@ -27,7 +27,7 @@
                 </ul>
             </li>
             <li class="name"><a href="aboutus.html">關於我們</a></li>
-            <li class="name"><a href="contact.html">聯絡我們</a></li>
+            <li class="name"><a href="center.html">會員中心</a></li>
         </ul>
       </div>
 
@@ -44,21 +44,35 @@
         <div class="container">
             <h1>購物車</h1>
             <div class="item-container">
-                <input type="radio" id="photo1" name="photo" value="photo1">
+                <input type="radio" id="photo1" value="photo1">
                 <img src="assets/image/wear/wear1.jpg" alt="照片1">
                     <div class="item-details">
-                        <p>商品名稱：</p>
-                        <p>數量：<input type="button" value="-" class="quantity-btn" onclick="decreaseQuantity('quantity1')"> <span class="quantity" id="quantity1">1</span>  <input type="button" value="+" class="quantity-btn" onclick="increaseQuantity('quantity1')"></p>
+                        <p><b>商品名稱：</b></p>
+                        <p>數量：</p>
+                        <div class="quantity-container">
+                            <div class="btn-numbox">
+                              <span id="num-jian" class="quantity-btn">-</span>
+                              <input type="text" class="input-num" id="input-num" value="0"/>
+                              <span id="num-jia" class="quantity-btn">+</span>
+                            </div>
+                        </div>
                         <p>價格：<span class="price" style="color:black"><b>NT$</b></span></p>
                     </div>            
             </div>
             <br>
             <div class="item-container">
-                <input type="radio" id="photo2" name="photo" value="photo2">
+                <input type="radio" id="photo2" value="photo2">
                 <img src="assets/image/cookie/product2.jpg" alt="照片2">
                     <div class="item-details">
-                        <p>商品名稱：</p>
-                        <p>數量：<input type="button" value="-" class="quantity-btn" onclick="decreaseQuantity('quantity1')"> <span class="quantity" id="quantity1">1</span>  <input type="button" value="+" class="quantity-btn" onclick="increaseQuantity('quantity1')"></p>
+                        <p><b>商品名稱：</p></b>
+                        <p>數量：</p>
+                        <div class="quantity-container">
+                            <div class="btn-numbox">
+                              <span id="num-jian" class="quantity-btn">-</span>
+                              <input type="text" class="input-num" id="input-num" value="0"/>
+                              <span id="num-jia" class="quantity-btn">+</span>
+                            </div>
+                        </div>
                         <p>價格：<span class="price" style="color:black"><b>NT$</b></span></p>
                     </div>
             </div>
@@ -77,6 +91,7 @@
       &copy; 2023 蔡貽琳 李芸妘 鄭夙妙 陳柔恩 陳珊妮 黃維潔 李定緯
     </footer>
     <script src="assets/js/car.js"></script>
+    <script src="assets/js/btn.js"></script>
 
   </body>
   </html>

@@ -220,7 +220,7 @@ h4 {
 
 .add-to-cart:hover,
 .checkout:hover {
-    background-color: #C0A06A;
+    background-color: #6a8397;
 }
 
 .quantity-btn {
@@ -505,7 +505,7 @@ form {
 }
 
 .box {
-    margin-left: 23%;
+    margin-left: 20%;
 }
 
 #checkbox input[type="checkbox"] {
