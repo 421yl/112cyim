@@ -54,44 +54,18 @@ body {
     text-decoration: none;
 }
 
-form {
-    padding: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-top: 1%;
-    border: none;
-    margin-bottom: 1%;
-}
-
-.form-img {
-    max-width: 75%;
-    flex-wrap: wrap;
-    margin-top: 2%;
-    border-radius: 3%;
-    transition: transform 0.3s ease-in-out;
-}
-
-.form-img:hover {
-    transform: scale(1.05);
-}
-
-.product {
-    width: calc(30% - 20px);
-    margin: -1%;
-    text-align: center;
-}
-
 footer {
     background-color: #47896e;
     color: white;
     text-align: center;
     padding: 1%;
+    position: fixed;
+    /* 或者使用 position: absolute; */
     bottom: 0;
+    /* 将底部定位设置为0，以确保footer在底部 */
     width: 100%;
     height: fit-content;
+    margin-top: auto;
 }
 
 h2 {
@@ -160,8 +134,39 @@ h2 {
     display: block;
 }
 
-.topic-title {
-    margin-left: 13%;
-    margin-top: 3%;
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: left;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    margin-top: -1%;
+}
+
+.container a {
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+button {
+    width: 95%;
 }

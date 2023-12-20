@@ -4,18 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>購物車</title>
-    <link rel="stylesheet" href="assets/css/style5.css">
+    <title>張乑JINGLE BELLS</title>
+    <link rel="stylesheet" href="assets/css/car.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/image/aboutus/logo.png">
 </head>
 
+<body>
+    <div class="header">
+      <img class="header-logo" src="assets/image/aboutus/logo-name.jpg">
+      <div class="nav-title">
+        <ul class="nav-name">  
+            <li class="name"><a href="index.html">首頁</a>
+            <li class="name"><a href="index.html">所有商品</a>
+                <ul class="subname">
+                  <li><a href="product.html">ALL</a></li>
+                  <li><a href="decoration.html">Decoraction</a></li>
+                  <li><a href="wearing.html">Wearing</a></li>
+                  <li><a href="cookie.html">Cookie</a></li>
+                </ul>
+            </li>
+            <li class="name"><a href="aboutus.html">關於我們</a></li>
+            <li class="name"><a href="contact.html">聯絡我們</a></li>
+        </ul>
+      </div>
 
-<boby>
+      <div class="header-links">
+        <a href="member.html">登入</a>
+        <span>|</span>
+        <a href="signup.html">註冊</a>
+        <span>|</span>
+        <a href="car.html">購物車</a>
+      </div>
+    </div>
+    
     <form action="action_page.php">
         <div class="container">
             <h1>購物車</h1>
             <div class="item-container">
                 <input type="radio" id="photo1" name="photo" value="photo1">
-                <img src="https://picsum.photos/100/100?random" alt="照片1">
+                <img src="assets/image/wear/wear1.jpg" alt="照片1">
                     <div class="item-details">
                         <p>商品名稱：</p>
                         <p>數量：<input type="button" value="-" class="quantity-btn" onclick="decreaseQuantity('quantity1')"> <span class="quantity" id="quantity1">1</span>  <input type="button" value="+" class="quantity-btn" onclick="increaseQuantity('quantity1')"></p>
@@ -25,7 +55,7 @@
             <br>
             <div class="item-container">
                 <input type="radio" id="photo2" name="photo" value="photo2">
-                <img src="https://picsum.photos/100/100?random" alt="照片2">
+                <img src="assets/image/cookie/product2.jpg" alt="照片2">
                     <div class="item-details">
                         <p>商品名稱：</p>
                         <p>數量：<input type="button" value="-" class="quantity-btn" onclick="decreaseQuantity('quantity1')"> <span class="quantity" id="quantity1">1</span>  <input type="button" value="+" class="quantity-btn" onclick="increaseQuantity('quantity1')"></p>
@@ -42,6 +72,11 @@
             </div>
         </div>
     </form>
+
+    <footer>
+      &copy; 2023 蔡貽琳 李芸妘 鄭夙妙 陳柔恩 陳珊妮 黃維潔 李定緯
+    </footer>
     <script src="assets/js/car.js"></script>
-</body>
-</html>
+
+  </body>
+  </html>

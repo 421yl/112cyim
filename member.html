@@ -4,42 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>會員登入</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>張乑JINGLE BELLS</title>
+    <link rel="stylesheet" href="assets/css/member.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/image/aboutus/logo.png">
 </head>
+
 <body>
-  <form action="action_page.php">
-    <div class="container">
-        <h1>會員登入</h1>
-
-        <div class="label-container">
-            <label for="name"><b>帳號:</b></label>
-            <input type="text" placeholder="Enter Account" name="name" required>
-        </div>
-        
-        <div class="label-container">
-            <label for="psw"><b>密碼:</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-        </div>
-        
-        <div class="label-container">
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> 記住我
-          </label>
-        </div>
-
-        <div class="clearfix">
-            <button type="submit" class="signupbtn">登入</button>
-        </div>
-        
-        <div class=".signup">
-            <a href="signup.html">註冊新會員</a><a>/</a>
-            <a href="password.html">忘記密碼?</a>
-        </div>
-        
+  <div class="header">
+    <img class="header-logo" src="assets/image/aboutus/logo-name.jpg">
+    <div class="nav-title">
+      <ul class="nav-name">  
+          <li class="name"><a href="index.html">首頁</a>
+          <li class="name"><a href="index.html">所有商品</a>
+              <ul class="subname">
+                <li><a href="product.html">ALL</a></li>
+                <li><a href="decoration.html">Decoraction</a></li>
+                <li><a href="wearing.html">Wearing</a></li>
+                <li><a href="cookie.html">Cookie</a></li>
+              </ul>
+          </li>
+          <li class="name"><a href="aboutus.html">關於我們</a></li>
+          <li class="name"><a href="contact.html">聯絡我們</a></li>
+      </ul>
     </div>
+
+      <div class="header-links">
+        <a href="member.html">登入</a>
+        <span>|</span>
+        <a href="signup.html">註冊</a>
+        <span>|</span>
+        <a href="car.html">購物車</a>
+      </div>
+    </div>
+  
+    <form action="action_page.php">
+        <div class="container">
+            <h1>會員登入</h1>
     
+            <div class="label-container">
+                <label for="name"><b>帳號:</b></label>
+                <input type="text" placeholder="Enter Account" name="name" required>
+            </div>
+            
+            <div class="label-container">
+                <label for="psw"><b>密碼:</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+            
+            <div class="label-container">
+              <label>
+                <input type="checkbox" name="remember"> 記住我
+              </label>
+            </div>
     
-  </form>
-</body>
+            <div class="clearfix">
+                <button type="submit" class="signupbtn">登入</button>
+            </div>
+            
+            <div class=".signup">
+                <a href="signup.html">註冊新會員</a><a>/</a>
+                <a href="password.html">忘記密碼</a>
+            </div>
+            
+        </div>
+    </form>
+    
+    <footer>
+      &copy; 2023 蔡貽琳 李芸妘 鄭夙妙 陳柔恩 陳珊妮 黃維潔 李定緯
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+
+  </body>
 </html>
