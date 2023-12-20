@@ -56,7 +56,7 @@ form {
 .form-img {
     max-width: 300px;
     flex-wrap: wrap;
-    margin-top: 8%;
+    margin-top: 1%;
     border-radius: 3%;
     transition: transform 0.3s ease-in-out;
 }
@@ -172,7 +172,6 @@ h2 {
     max-width: 1000px;
     position: relative;
     margin: auto;
-    padding-bottom: 3%;
 }
 
 .singleSlide {
@@ -192,9 +191,9 @@ img {
     border: transparent solid 1px;
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: auto;
-    padding: 15px;
+    padding: 16px;
     color: black;
 }
 
@@ -204,9 +203,9 @@ img {
     border: transparent solid 1px;
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: auto;
-    padding: 15px;
+    padding: 16px;
     color: black;
 }
 
@@ -217,17 +216,6 @@ img {
     color: white !important;
 }
 
-/* 小標題
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
- */
 /* 淡入淡出 特效*/
 .fade {
     animation-name: fade;
@@ -243,5 +231,3 @@ img {
         opacity: 1;
     }
 }
-
-/*輪播圖結束*/
