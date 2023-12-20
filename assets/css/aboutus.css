@@ -12,6 +12,18 @@ body {
     overflow-x: hidden;
 }
 
+.logo p {
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+.nav-title {
+    position: relative;
+    width: 30%;
+    margin-right: 40%;
+    font-size: 15px;
+}
+
 .header {
     background-color: #47896e;
     color: white;
@@ -21,6 +33,12 @@ body {
     align-items: center;
     text-decoration: none;
     width: 100%;
+}
+
+.header-logo {
+    max-width: 50px;
+    margin-top: -2%;
+    margin-bottom: -2%;
 }
 
 .header-options {
@@ -50,12 +68,6 @@ footer {
     width: 100%;
     height: fit-content;
     margin-top: auto;
-}
-
-.nav-title {
-    position: relative;
-    width: 38%;
-    margin-right: 25%;
 }
 
 .name {
@@ -109,6 +121,7 @@ footer {
     display: block;
     line-height: 30px;
     font-family: 'Noto Serif TC', serif;
+    margin: 0 10px;
 }
 
 .nav-name ul {

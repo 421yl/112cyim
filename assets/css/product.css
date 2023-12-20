@@ -12,6 +12,13 @@ body {
     overflow-x: hidden;
 }
 
+.nav-title {
+    position: relative;
+    width: 30%;
+    margin-right: 29%;
+    font-size: 15px;
+}
+
 .header {
     background-color: #47896e;
     color: white;
@@ -21,6 +28,12 @@ body {
     align-items: center;
     text-decoration: none;
     width: 100%;
+}
+
+.header-logo {
+    max-width: 50px;
+    margin-top: -2%;
+    margin-bottom: -2%;
 }
 
 .header-options {
@@ -84,12 +97,6 @@ footer {
 h2 {
     text-align: center;
     margin-top: 30px;
-}
-
-.nav-title {
-    position: relative;
-    width: 30%;
-    margin-right: 20%;
 }
 
 .name {

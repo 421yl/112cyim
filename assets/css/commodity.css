@@ -4,16 +4,19 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     width: 100vw;
     max-width: 100vw;
     overflow-x: hidden;
-    min-height: 100vh;
-    /* 确保 body 至少占满视口高度 */
+}
+
+.nav-title {
+    position: relative;
+    width: 30%;
+    margin-right: 40%;
+    font-size: 15px;
 }
 
 .header {
@@ -27,6 +30,12 @@ body {
     width: 100%;
 }
 
+.header-logo {
+    max-width: 50px;
+    margin-top: -2%;
+    margin-bottom: -2%;
+}
+
 .header-options {
     display: flex;
     margin-left: 30%;
@@ -34,7 +43,7 @@ body {
 
 .header-links {
     display: flex;
-    margin-right: 20%;
+    margin-right: 0%;
 }
 
 .header-links a,
@@ -50,9 +59,10 @@ footer {
     color: white;
     text-align: center;
     padding: 1%;
-    bottom: 0;
+    bottom: 0%;
     width: 100%;
     height: fit-content;
+    margin-top: auto;
 }
 
 h1 {
@@ -60,14 +70,24 @@ h1 {
     margin-top: 30px;
 }
 
-h2 {
+h3 {
     text-align: center;
+    font-weight: bolder;
 }
 
-.nav-title {
-    position: relative;
-    width: 30%;
-    margin-right: 20%;
+h4 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.product-title {
+    text-align: left;
+    font-weight: bolder;
+}
+
+.describe {
+    margin-left: 18%;
+    margin-top: 2%;
 }
 
 .name {
@@ -131,25 +151,35 @@ h2 {
     display: block;
 }
 
+
 .product-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 20px;
     flex: 1;
     margin-top: 0;
+    justify-content: space-between;
 }
 
 .product-details {
-    display: flex;
+    width: 50%;
     justify-content: space-between;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    margin-left: 34%;
 }
 
 .product-image img {
-    max-width: 50%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    margin-left: 34%;
     border-radius: 2%;
 }
 
@@ -163,8 +193,9 @@ h2 {
 }
 
 .product-info {
-    width: 50%;
+    width: 35%;
     margin-right: 17%;
+    margin-top: -10%;
 }
 
 .add-to-cart,
@@ -234,7 +265,7 @@ h2 {
 .btn-numbox .count .num-jian,
 .btn-numbox .input-num,
 .btn-numbox .num-jia {
-    width: 348px;
+    width: 367px;
     height: 28px;
     line-height: 28px;
     text-align: center;
@@ -251,6 +282,7 @@ h2 {
     width: calc(30% - 20px);
     margin: 20px;
     text-align: center;
+    margin-bottom: -1%;
 }
 
 form {
@@ -258,8 +290,8 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: -2%;
     border: none;
     margin-bottom: 0;
@@ -276,3 +308,378 @@ form {
 .form-img:hover {
     transform: scale(1.05);
 }
+
+.imgs {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 34%;
+    margin-top: 1%;
+}
+
+.photos {
+    width: 75px;
+    height: 75px;
+    border: 0.1px solid gray;
+    border-radius: 2%;
+}
+
+.product-part {
+    padding: 40px 0;
+}
+
+.container.product-part {
+    margin: 60px 0 60px 0;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.product-part .item {
+    margin: 20px 0;
+}
+
+.product-part .product-picture {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.product-part .product-picture img {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .product-part .product-picture img {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product-part .product-picture img {
+        max-width: 70%;
+    }
+}
+
+.product-part .product-content .name {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-part .product-content .price {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+
+.product-part .product-content .note {
+    text-align: center;
+    font-size: 18px;
+}
+
+.product-part .product-content .quantity .text {
+    margin: 10px 0;
+}
+
+.product-part .product-content .quantity .left {
+    color: #999;
+}
+
+.product-part .product-content .quantity .right {
+    float: right;
+    color: rgb(214, 68, 68);
+}
+
+.product-part .product-content .quantity {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.product-part .product-content .quantity .all {
+    margin: 0;
+}
+
+.product-part .product-content .quantity .decrease {
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 0px;
+}
+
+.product-part .product-content .quantity .decrease:hover {
+    border: 1px solid #999;
+}
+
+.product-part .product-content .quantity input {
+    border: 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.product-part .product-content .quantity .increase {
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 0px;
+}
+
+.product-part .product-content .quantity .increase:hover {
+    border: 1px solid #999;
+}
+
+.product-part .product-content .cart-checkout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 422px;
+    margin: auto;
+}
+
+.product-part .product-content .cart {
+    text-align: center;
+}
+
+.product-part .product-content .cart .add-shopping-cart {
+    width: 150px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #94b2ca;
+    color: #000;
+    text-align: center;
+    margin-top: 40px;
+    /* max-width: 400px; */
+}
+
+.product-part .product-content .cart .add-shopping-cart:hover {
+    background-color: #6a8397;
+    color: #fff;
+}
+
+.product-part .product-content .checkout {
+    text-align: center;
+}
+
+.product-part .product-content .checkout .checkout-btn {
+    width: 150px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #94b2ca;
+    color: #000;
+    text-align: center;
+    margin-top: 40px;
+    /* max-width: 400px; */
+}
+
+.product-part .product-content .checkout .checkout-btn:hover {
+    background-color: #6a8397;
+    color: #fff;
+}
+
+.product-part .description {
+    margin: auto;
+    /* border: 2px solid #6a8397; */
+}
+
+.product-part .description .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-part .description .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.suggest {
+    margin-top: -8%;
+}
+
+/*---------------------------- tabs 開始------------------------------------------------------------*/
+
+.product-part .tabs-part .all {
+    padding: 0;
+}
+
+.product-part .row .tab {
+    margin-top: 100px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    /* background-color: #f1f1f1; */
+    padding: 0;
+    border: 0;
+    /* border-bottom: 1px solid #ccc; */
+    border-bottom: 3px solid #6a8397;
+}
+
+.product-part .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-part .tab button:hover {
+    background-color: #eeeeee;
+}
+
+.product-part .tab button.active {
+    background-color: #6a8397;
+    color: #fff;
+}
+
+.product-part .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /* border: 1px solid #ccc; */
+    /* border: 2px solid #6a8397; */
+    border-top: none;
+}
+
+/* ----------------------tabs-----------------------------------------------------*/
+
+/* ---------------------------------------評論------------------------------------------- */
+.product-part .review-comment .review {
+    padding: 0 20px 40px 20px;
+}
+
+.product-part .review-comment .comment {
+    padding: 0 20px 40px 20px;
+}
+
+.product-part .review-comment .title {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.product-part .review {
+    height: 500px;
+}
+
+.product-part .review .all-review {
+    height: 400px;
+    overflow: visible;
+}
+
+.product-part .review-item .information {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.product-part .review-item .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-part .review-item .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product-part .review-item .left img {
+    margin-right: 10px;
+    width: 45px;
+}
+
+.product-part .review-item .left .rating {
+    color: rgb(67, 129, 177);
+}
+
+.product-part .review-item .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: right;
+}
+
+.product-part .review-item .bottom {
+    /* text-align: center; */
+    margin: 20px 0 0 50px;
+}
+
+/* ---------------------------------------評論------------------------------------------- */
+
+/* ---------------------------------------留言板------------------------------------------- */
+
+.product-part .comment .name {
+    border: 1px solid #353535;
+    padding: 2px 10px;
+    margin: 20px 0px 20px 0px;
+    outline: none;
+}
+
+.product-part .comment textarea {
+    resize: none;
+
+    height: 150px;
+    border: 1px solid #353535;
+    outline: none;
+}
+
+.product-part .rating-summit-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-part .rating-summit-part .submit {
+    padding: 1px 20px;
+    margin: 20px 0;
+    background-color: rgb(67, 129, 177);
+    border: 0;
+    color: #fff;
+}
+
+.product-part .rating-summit-part .submit:hover {
+    background-color: rgb(60, 103, 137);
+    color: #fff;
+}
+
+/* 星級 */
+.product-part .rating-summit-part .rating {
+    position: relative;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: end;
+}
+
+.product-part .rating-summit-part .rating input {
+    display: none;
+}
+
+.product-part .rating-summit-part .rating label {
+    float: left;
+    color: rgb(165, 186, 206);
+    margin: 20px 0;
+}
+
+.product-part .rating-summit-part .rating label::after {
+    content: "★";
+    font-size: 28px;
+    padding: 5px;
+    display: inline-block;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+.product-part .rating-summit-part .rating input:checked~label,
+.product-part .rating-summit-part .rating label:hover~label,
+.product-part .rating-summit-part .rating label:hover {
+    color: rgb(67, 129, 177);
+}
+
+/* ---------------------------------------留言板------------------------------------------- */
