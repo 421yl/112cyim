@@ -192,7 +192,7 @@ h4 {
 
 .right {
     float: right;
-    color: rgb(214, 68, 68);
+    color: gray;
 }
 
 .product-info {
@@ -338,169 +338,6 @@ form {
     margin: auto;
 }
 
-.product-part .item {
-    margin: 20px 0;
-}
-
-.product-part .product-picture {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-.product-part .product-picture img {
-    max-width: 100%;
-}
-
-@media screen and (min-width: 992px) {
-    .product-part .product-picture img {
-        max-width: 80%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .product-part .product-picture img {
-        max-width: 70%;
-    }
-}
-
-.product-part .product-content .name {
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.product-part .product-content .price {
-    font-weight: bold;
-    text-align: center;
-    font-size: 25px;
-}
-
-.product-part .product-content .note {
-    text-align: center;
-    font-size: 18px;
-}
-
-.product-part .product-content .quantity .text {
-    margin: 10px 0;
-}
-
-.product-part .product-content .quantity .left {
-    color: #999;
-}
-
-.product-part .product-content .quantity .right {
-    float: right;
-    color: rgb(214, 68, 68);
-}
-
-.product-part .product-content .quantity {
-    max-width: 400px;
-    margin: auto;
-    margin-top: 60px;
-}
-
-.product-part .product-content .quantity .all {
-    margin: 0;
-}
-
-.product-part .product-content .quantity .decrease {
-    border: 0;
-    border-radius: 5px;
-    padding: 5px 0px;
-}
-
-.product-part .product-content .quantity .decrease:hover {
-    border: 1px solid #999;
-}
-
-.product-part .product-content .quantity input {
-    border: 0;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 5px 0px;
-    text-align: center;
-}
-
-.product-part .product-content .quantity .increase {
-    border: 0;
-    border-radius: 5px;
-    padding: 5px 0px;
-}
-
-.product-part .product-content .quantity .increase:hover {
-    border: 1px solid #999;
-}
-
-.product-part .product-content .cart-checkout {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 422px;
-    margin: auto;
-}
-
-.product-part .product-content .cart {
-    text-align: center;
-}
-
-.product-part .product-content .cart .add-shopping-cart {
-    width: 150px;
-    padding: 10px 30px;
-    border-radius: 10px;
-    border: 0;
-    background-color: #94b2ca;
-    color: #000;
-    text-align: center;
-    margin-top: 40px;
-    /* max-width: 400px; */
-}
-
-.product-part .product-content .cart .add-shopping-cart:hover {
-    background-color: #6a8397;
-    color: #fff;
-}
-
-.product-part .product-content .checkout {
-    text-align: center;
-}
-
-.product-part .product-content .checkout .checkout-btn {
-    width: 150px;
-    padding: 10px 30px;
-    border-radius: 10px;
-    border: 0;
-    background-color: #94b2ca;
-    color: #000;
-    text-align: center;
-    margin-top: 40px;
-    /* max-width: 400px; */
-}
-
-.product-part .product-content .checkout .checkout-btn:hover {
-    background-color: #6a8397;
-    color: #fff;
-}
-
-.product-part .description {
-    margin: auto;
-    /* border: 2px solid #6a8397; */
-}
-
-.product-part .description .title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.product-part .description .title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
 .suggest {
     margin-top: -8%;
 }
@@ -535,54 +372,6 @@ form {
 #checkbox .round {
     border-radius: 5px;
 }
-
-
-/*---------------------------- tabs 開始------------------------------------------------------------*/
-
-.product-part .tabs-part .all {
-    padding: 0;
-}
-
-.product-part .row .tab {
-    margin-top: 100px;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    /* background-color: #f1f1f1; */
-    padding: 0;
-    border: 0;
-    /* border-bottom: 1px solid #ccc; */
-    border-bottom: 3px solid #6a8397;
-}
-
-.product-part .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-.product-part .tab button:hover {
-    background-color: #eeeeee;
-}
-
-.product-part .tab button.active {
-    background-color: #6a8397;
-    color: #fff;
-}
-
-.product-part .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    /* border: 1px solid #ccc; */
-    /* border: 2px solid #6a8397; */
-    border-top: none;
-}
-
-/* ----------------------tabs-----------------------------------------------------*/
 
 /* ---------------------------------------評論------------------------------------------- */
 .product-part .review-comment .review {
@@ -633,7 +422,7 @@ form {
 }
 
 .product-part .review-item .left .rating {
-    color: rgb(67, 129, 177);
+    color: #47896e;
 }
 
 .product-part .review-item .right {
@@ -675,13 +464,13 @@ form {
 .product-part .rating-summit-part .submit {
     padding: 1px 20px;
     margin: 20px 0;
-    background-color: rgb(67, 129, 177);
+    background-color: #47896e;
     border: 0;
     color: #fff;
 }
 
 .product-part .rating-summit-part .submit:hover {
-    background-color: rgb(60, 103, 137);
+    background-color: #6a8397;
     color: #fff;
 }
 
@@ -699,7 +488,7 @@ form {
 
 .product-part .rating-summit-part .rating label {
     float: left;
-    color: rgb(165, 186, 206);
+    color: #6a8397;
     margin: 20px 0;
 }
 
@@ -715,7 +504,7 @@ form {
 .product-part .rating-summit-part .rating input:checked~label,
 .product-part .rating-summit-part .rating label:hover~label,
 .product-part .rating-summit-part .rating label:hover {
-    color: rgb(67, 129, 177);
+    color: #47896e;
 }
 
 /* ---------------------------------------留言板------------------------------------------- */
