@@ -103,7 +103,11 @@ footer {
     border: 0.1px solid gray;
     line-height: 70px;
     font-size: 13px;
+    padding: 0 15px;
+    width: 30px;
+    height: 65px;
 }
+
 
 .subname li a:hover {
     background-color: rgb(172, 172, 172);
@@ -258,6 +262,16 @@ footer {
     margin-top: -7%;
 }
 
+.profile-info-bold {
+    display: flex;
+    border: 5px;
+}
+
+.profile-info-bold-input {
+    margin-top: 4%;
+    height: 15px;
+}
+
 .cart {
     display: inline-block;
     width: 10%;
@@ -280,4 +294,36 @@ h3 {
 .profile-info hr {
     width: 245%;
     text-align: left;
+}
+
+.review {
+    display: flex;
+}
+
+.review img {
+    width: 5%;
+    height: 5%;
+}
+
+.review-info {
+    margin-left: 1%;
+    line-height: 50%;
+    margin-top: -0.5%;
+}
+
+.review-detail {
+    margin-left: 6%;
+    border: 0.05px solid gray;
+    padding: 1%;
+    width: 81%;
+}
+
+
+.orders hr {
+    width: 90%;
+    margin-left: 0%;
+}
+
+.review-detail hr {
+    width: 100%;
 }

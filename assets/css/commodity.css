@@ -132,6 +132,9 @@ h4 {
     border: 0.1px solid gray;
     line-height: 70px;
     font-size: 13px;
+    padding: 0 15px;
+    width: 65px;
+    height: 65px;
 }
 
 .subname li a:hover {
@@ -314,11 +317,12 @@ form {
 }
 
 .imgs {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-evenly;
     margin-left: 34%;
     margin-top: 1%;
+
 }
 
 .photos {
@@ -326,6 +330,7 @@ form {
     height: 75px;
     border: 0.1px solid gray;
     border-radius: 2%;
+
 }
 
 .product-part {
@@ -346,7 +351,7 @@ form {
     margin-left: 20%;
 }
 
-#checkbox input[type="checkbox"] {
+#checkbox input[type="radio"] {
     display: none;
 }
 

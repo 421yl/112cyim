@@ -105,6 +105,9 @@ footer {
     border: 0.1px solid gray;
     line-height: 70px;
     font-size: 13px;
+    padding: 0 15px;
+    width: 30px;
+    height: 65px;
 }
 
 .subname li a:hover {
