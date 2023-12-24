@@ -227,6 +227,7 @@ footer {
 
 .profile {
     display: flex;
+    margin-left: 10%;
 }
 
 .profile img {
