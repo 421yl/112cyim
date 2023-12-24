@@ -173,6 +173,15 @@ footer {
     margin-left: 10%;
 }
 
+.orders p {
+    text-align: left;
+}
+
+.orders-type {
+    text-align: left;
+    font-size: 17px;
+}
+
 .history-orders {
     margin-top: 2%;
     color: black;
@@ -220,6 +229,7 @@ footer {
     font-size: 17px;
 }
 
+
 .member {
     text-align: left;
     margin-left: 10%;
@@ -228,6 +238,7 @@ footer {
 .profile {
     display: flex;
     margin-left: 10%;
+    margin-top: 6%;
 }
 
 .profile img {
@@ -240,9 +251,33 @@ footer {
     margin-left: 10px;
     padding: 5px;
     font-size: 14px;
-
 }
 
-.profile p {
-    flex-wrap: wrap;
+.profile-info {
+    margin-left: 8%;
+    margin-top: -7%;
+}
+
+.cart {
+    display: inline-block;
+    width: 10%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 70%;
+    background-color: #47896e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 1%;
+}
+
+h3 {
+    text-align: center;
+    margin-left: 50%;
+}
+
+.profile-info hr {
+    width: 245%;
+    text-align: left;
 }
