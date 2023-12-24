@@ -64,11 +64,6 @@ footer {
     height: fit-content;
 }
 
-h2 {
-    text-align: center;
-    margin-top: 30px;
-}
-
 .name {
     position: relative;
 }
@@ -128,4 +123,121 @@ h2 {
 
 .nav-name .name:hover ul {
     display: block;
+}
+
+.tab_css {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.tab_css input {
+    display: none;
+}
+
+.tab_css label {
+    margin: 0 5px 5px 0;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #47896e;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.tab_content {
+    order: 1;
+    display: none;
+    width: 100%;
+    border-bottom: 3px solid #ddd;
+    line-height: 1.6;
+    font-size: .9em;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tab_css input:checked+label,
+.tab_css label:hover {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.tab_css input:checked+label+.tab_content {
+    display: initial;
+}
+
+.orders {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.history-orders {
+    margin-top: 2%;
+    color: black;
+    text-decoration: none;
+}
+
+.his-order {
+    color: gray;
+}
+
+.history-info {
+    display: flex;
+    line-height: 15px;
+}
+
+.history-info img {
+    width: 8%;
+    height: 8%;
+}
+
+.history-orders-top hr {
+    width: 90%;
+    line-height: 1.6;
+    font-size: 2em;
+    border: 20px solid rgba(221, 221, 221, 0.698);
+    margin-left: 0%;
+}
+
+.history-orders hr {
+    width: 90%;
+    line-height: 1.6;
+    font-size: .9em;
+    border: 1px solid #ddd;
+    margin-left: 0%;
+}
+
+.history-information-text {
+    margin-left: 2%;
+}
+
+.history-text {
+    display: flex;
+    margin-top: 2.5%;
+    margin-left: 50%;
+    font-size: 17px;
+}
+
+.member {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile img {
+    width: 13%;
+    height: 13%;
+    border-radius: 50%;
+}
+
+.profile input {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+
 }

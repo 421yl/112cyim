@@ -60,9 +60,7 @@ footer {
     text-align: center;
     padding: 1%;
     position: fixed;
-    /* 或者使用 position: absolute; */
     bottom: 0;
-    /* 将底部定位设置为0，以确保footer在底部 */
     width: 100%;
     height: fit-content;
     margin-top: auto;

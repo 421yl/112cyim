@@ -16,3 +16,19 @@ function decreaseQuantity(quantityId) {
 }
 
 function updateTotal() {}
+
+const add = document.getElementsByClassName('addBtn')
+const remove = document.getElementsByClassName('removeBtn')
+
+const addFn = (e)=>{
+  e.target.parentNode.querySelector('input').value ++
+}
+const removeFn = (e)=>{
+  e.target.parentNode.querySelector('input').value --
+}
+for(let i=0;i<add.length;i++){
+  add[i].addEventListener('click', addFn)
+}
+for(let i=0;i<remove.length;i++){
+  remove[i].addEventListener('click', removeFn)
+}

@@ -14,7 +14,7 @@ body {
 
 .nav-title {
     position: relative;
-    width: 50%;
+    width: 35%;
     margin-right: 45%;
     font-size: 15px;
     display: flex;
@@ -45,7 +45,7 @@ body {
 
 .header-links {
     display: flex;
-    margin-right: -4%;
+    margin-right: -11%;
     width: 25%;
 }
 

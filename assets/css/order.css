@@ -59,14 +59,11 @@ footer {
     color: white;
     text-align: center;
     padding: 1%;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: fit-content;
-}
-
-h2 {
-    text-align: center;
-    margin-top: 30px;
+    margin-top: auto;
 }
 
 .name {
@@ -130,117 +127,59 @@ h2 {
     display: block;
 }
 
-h1 {
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.container {
+.orders {
     text-align: left;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: -1%;
+    margin-left: 10%;
 }
 
-.item-container {
+.history-orders {
+    margin-top: 2%;
+}
+
+.his-order {
+    color: gray;
+}
+
+.history-info {
     display: flex;
-    align-items: centee;
-    width: 150%
+    line-height: 15px;
 }
 
-
-.item-container img {
-    width: 22%;
-    height: 22%;
+.history-info img {
+    width: 8%;
+    height: 8%;
 }
 
-.item-details {
-    flex-grow: 1;
-    margin-left: 3%;
+.history-orders-top hr {
+    width: 90%;
+    line-height: 1.6;
+    font-size: 2em;
+    border: 20px solid rgba(221, 221, 221, 0.698);
+    margin-left: 0%;
+}
+
+.history-orders hr {
+    width: 90%;
+    line-height: 1.6;
+    font-size: .9em;
+    border: 1px solid #ddd;
+    margin-left: 0%;
+}
+
+.history-information-text {
+    margin-left: 2%;
+}
+
+.history-text {
     display: flex;
-    flex-direction: column;
-}
-
-.price {
-    color: black;
-}
-
-
-button {
-    width: 28%;
-    margin-right: 100px;
-    margin-left: 430px;
-}
-
-.quantity-btn {
-    font-size: 16px;
-    padding: 3px 8px;
-    cursor: pointer;
-}
-
-.quantity-btn {
-    line-height: 28px;
-    text-align: center;
-    align-items: center;
-    font-size: 18px;
-    color: black;
-    cursor: pointer;
-    padding: 3px 8px;
-}
-
-.quantity-container {
-    display: flex;
-    align-items: center;
-}
-
-.btn-numbox {
-    overflow: hidden;
-    border: 1px solid #e6e6e6;
-}
-
-.btn-numbox li {
-    float: left;
-}
-
-.btn-numbox li .number,
-.kucun {
-    display: inline-block;
-    font-size: 12px;
-    color: #808080;
-    vertical-align: sub;
-}
-
-.btn-numbox .count {
-    overflow: hidden;
-    margin: 0 16px 0 -20px;
-}
-
-.btn-numbox .count .num-jian,
-.btn-numbox .input-num,
-.btn-numbox .num-jia {
-    width: 150px;
-    height: 28px;
-    line-height: 28px;
-    text-align: center;
-    font-size: 18px;
-    color: #999;
-    cursor: pointer;
-    border: 1px solid #e6e6e6;
-    display: inline-block;
-    margin: 0 8px;
-    align-items: center;
+    margin-top: 2.5%;
+    margin-left: 50%;
+    font-size: 17px;
 }
 
 .next-page {
     display: inline-block;
-    width: 28%;
+    width: 10%;
     padding: 10px;
     margin-top: 10px;
     background-color: #47896e;
@@ -248,4 +187,5 @@ button {
     border: none;
     cursor: pointer;
     box-sizing: border-box;
+    margin-left: 80%;
 }

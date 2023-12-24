@@ -304,6 +304,7 @@ form {
     max-width: 300px;
     flex-wrap: wrap;
     margin-top: 1%;
+    margin-bottom: 4%;
     border-radius: 3%;
     transition: transform 0.3s ease-in-out;
 }

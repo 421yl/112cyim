@@ -43,11 +43,12 @@
     <form action="action_page.php">
         <h1>結  帳</h1>
         <div class="container">
-            <h3>訂單詳情</h3>
+            <hr>
             <div class="item-container">
                 <img src="assets/image/wear/wear3.jpg" alt="照片1">
                     <div class="item-details">
                         <p><b>聖誕造型髮夾</b></p>
+                        <p>選項：第四款</p>
                         <p>數量：1</p>
                         <p>價格：<span class="price" style="color:black">NT$80</span></p>
                     </div> 
@@ -62,28 +63,56 @@
                     </div> 
             </div>
             <hr>
-            <p>總數量：</p>
+            <h3>訂購資訊</h3>
+            <p>收件人姓名&nbsp;&emsp;<input type="text" name="name"></p>
+            <p>電話&nbsp;&emsp;&emsp;&emsp;&emsp;<input type="tel" name="tel"></p>
+            <p>電子郵件&nbsp;&emsp;&emsp;<input type="email" name="email"></p>
+            <p>縣市&emsp;&emsp;&emsp;&emsp;
+            <select>
+                <option></option>
+                <option>臺北市</option>
+                <option>新北市</option>
+                <option>基隆市</option>
+                <option>桃園市</option>
+                <option>新竹市</option>
+                <option>新竹縣</option>
+                <option>臺中市</option>
+                <option>臺南市</option>
+                <option>高雄市</option>
+                <option>苗栗縣</option>
+                <option>彰化縣</option>
+                <option>南投縣</option>
+                <option>雲林縣</option>
+                <option>嘉義市</option>
+                <option>嘉義縣</option>
+                <option>屏東縣</option>
+                <option>宜蘭縣</option>
+                <option>花蓮縣</option>
+                <option>臺東縣</option>
+                <option>澎湖縣</option>
+                <option>金門縣</option>
+                <option>連江縣</option>
+            </select></p>
+            <p>地址&nbsp;&emsp;&emsp;&emsp;&emsp;<input type="text" name="address"></p>
             <hr>
-            <p>運費：<span class="price" style="color:black"><b>NT$60</b></span></p>
-            <hr>
-            <p>總金額：<span class="price" style="color:black"><b>NT$</b></span></p>
+            <p>付款方式</p>
+            <input type="radio" name="pay" value="cash" id="cash">
+            <label for="cash">貨到付款</label>
             <hr>
             <p>寄送方式</p>
             <div class="container">
                 <br>
-                <input type="radio" name="send" value="send" id="cash"><a href="https://emap.pcsc.com.tw/ecmap/default.aspx" class="delivery-link" data-method="711">超商取貨(7-11)、</a>
+                <input type="radio" name="send" value="send" id="cash"><a href="https://emap.pcsc.com.tw/emap.aspx" class="delivery-link" data-method="711">超商取貨(7-11)、</a>
                 <input type="radio" name="send" value="send" id="cash"><a href="https://www.family.com.tw/Marketing/Map" class="delivery-link" data-method="familymart">超商取貨(全家)</a>
             </div>
             <hr>
-            <p>付款方式</p>
-                <input type="radio" name="pay" value="cash" id="cash">
-                <label for="cash">貨到付款</label>
+            <p>運費：<span class="price" style="color:black"><b>NT$60</b></span></p>
+            <hr>
+            <p>總金額：<span class="price" style="color:black"><b>NT$340</b></span></p>
+            <br>
+            <button type="button" class="cart" onclick="window.location.href='ORDER.html'">送出訂單</button>
         </div>
-    
-    
-        <div class="clearfix">
-            <button type="button" class="signupbtn" onclick="window.location">完成訂單</button>
-        </div>
+
     </form>
 
     <footer>
