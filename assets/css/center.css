@@ -242,3 +242,7 @@ footer {
     font-size: 14px;
 
 }
+
+.profile p {
+    flex-wrap: wrap;
+}

@@ -41,16 +41,20 @@
     </div>
 
     <div class="tab_css">
-      <input id="member" type="radio" name="tab" />
+      <input id="member" type="radio" name="tab" checked="checked"/>
       <label for="member">會員中心</label>
       <div class="tab_content">
-       <h2>會員資料</h2>
-       <br>
-        WFU BLOG | Blogger 調校資料庫<br/>
-        <input type="checkbox" name="variety"  /><span class="round button">蔓越莓酥</span></label>
+        <div class="member">
+            <h1>Membership</h1>
+            <div class="profile">
+              <img src="assets/image/member/profile.png" id="profile">
+              <p>收件人姓名</p>
+              <input type="text" name="name">
+            </div>
+        </div>
       </div>
 
-      <input id="order" type="radio" name="tab" checked="checked"/>
+      <input id="order" type="radio" name="tab" />
       <label for="order">訂單資料</label>
       <div class="tab_content">
         <div class="orders"> 
