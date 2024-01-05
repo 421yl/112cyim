@@ -24,9 +24,9 @@
       <div class="nav-title">
         <ul class="nav-name">  
             <li class="name"><a href="index.html">首頁</a>
-            <li class="name"><a href="index.html">所有商品</a>
+            <li class="name"><a href="product.html">所有商品</a>
                 <ul class="subname">
-                  <li><a href="product.html">首頁</a></li>
+                  <li><a href="index.html">首頁</a></li>
                   <li><a href="decoration.html">裝飾</a></li>
                   <li><a href="wearing.html">飾品</a></li>
                   <li><a href="cookie.html">食品</a></li>
@@ -70,7 +70,7 @@
           <div class="quantity-container">
               <div class="btn-numbox">
                   <span id="num-jian" class="quantity-btn">-</span>
-                  <input type="text" class="input-num" id="input-num" value="0"/>
+                  <input type="text" class="input-num" id="input-num" value="1"/>
                   <span id="num-jia" class="quantity-btn">+</span>
               </div>
           </div>
@@ -112,22 +112,23 @@
       <article>
         <section class="container product-part">
           <div class="tabs-part row">
-              <div id="review-comment" class="tabcontent review-comment">
-                <div class="row">
-                  <div class="col-12 col-md-6 col-xl-6 review">
-                    <!--<div class="title">評論</div>-->
-                    <div class="all-review">
-
+            <!-- 評論和留言部分的容器，使用 Bootstrap 的容器（Container）類別 -->
+            <div id="review-comment" class="tabcontent review-comment">
+              <div class="row">
+                <!-- 評論部分，使用 Bootstrap 的栅格系统（Grid System） -->
+                <div class="col-12 col-md-6 col-xl-6 review">
+                  <div class="all-review">
+                    <!-- 單一評論項目 -->
                       <div class="review-item">
                         <div class="information">
                           <div class="top">
                             <div class="left">
-                              <!-- 頭像 -->
+                               <!-- 頭像，使用 Bootstrap 的圖片（Image）類別 -->
                               <img src="assets/image/member/profile.png" />
                               <div class="name-rating">
-                                <!-- 評論人 -->
+                                <!-- 評論人資訊 -->
                                 <div class="name">4****l</div>
-                                <!-- 評論星等 -->
+                                <!-- 評論星等資訊 -->
                                 <div class="rating">★★★★★</div>
                               </div>
                             </div>
@@ -145,41 +146,51 @@
                           </div>
                         </div>
                       </div>
+                      <!-- 單一評論項目 -->
                       <div class="review-item">
                         <div class="information">
                           <div class="top">
                             <div class="left">
+                              <!-- 頭像，使用 Bootstrap 的圖片（Image）類別 -->
                               <img src="assets/image/member/profile.png" />
                               <div class="name-rating">
-                                <div class="name">h****k</div>
+                                <!-- 評論人資訊 -->
+                                <div class="name">t****e</div>
+                                <!-- 評論星等資訊 -->
                                 <div class="rating">★★★★★</div>
                               </div>
                             </div>
                             <div class="right">
-                              <div class="date">2024-04-21</div>
+                              <!-- 評論日期 -->
+                              <div class="date">2024-08-07</div>
                             </div>
                           </div>
-
+                          <!-- 評論內容 -->
                           <div class="bottom">
                             <div class="text">商品毫無瑕疵，非常漂亮~</div>
                           </div>
                         </div>
                       </div>
+                      <!-- 單一評論項目 -->
                       <div class="review-item">
                         <div class="information">
                           <div class="top">
                             <div class="left">
+                              <!-- 頭像，使用 Bootstrap 的圖片（Image）類別 -->
                               <img src="assets/image/member/profile.png" />
                               <div class="name-rating">
-                                <div class="name">t****e</div>
+                                <!-- 評論人資訊 -->
+                                <div class="name">h****k</div>
+                                <!-- 評論星等資訊 -->
                                 <div class="rating">★★★★★</div>
                               </div>
                             </div>
                             <div class="right">
-                              <div class="date">2024-08-07</div>
+                              <!-- 評論日期 -->
+                              <div class="date">2024-12-14</div>
                             </div>
                           </div>
-
+                          <!-- 評論內容 -->
                           <div class="bottom">
                             <div class="text">看到商品後真的超喜歡~~</div>
                           </div>
@@ -188,18 +199,20 @@
                     
                     </div>
                   </div>
-                  <!-- 留言板 -->
+                  <!-- 留言板部分，使用 Bootstrap 的栅格系统 -->
                   <div class="col-12 col-md-6 col-xl-6 comment">
                     <!--<div class="title">留言</div>-->
                     <form id="comment" method="post" action="#">
                       <!-- 留言人名字 -->
                       <label>Name</label>
+                      <!-- 留言人名字的輸入框，使用 Bootstrap 的表單控件（Form Control）類別 -->
                       <input
                         class="form-control shadow-none name"
                         type="text"
                       /><br />
-                      <!-- 留言內容 -->
+                      <!-- 留言內容的標籤 -->
                       <p>Comment</p>
+                      <!-- 留言內容的文本區域，使用 Bootstrap 的表單控件類別 -->
                       <textarea
                         class="form-control shadow-none"
                         id="content"
@@ -210,6 +223,7 @@
                       <!-- 星等 -->
                       <div class="rating-summit-part">
                         <div class="rating">
+                          <!-- 評分星等的選擇框，使用 Bootstrap 的表單控件和內嵌標籤 -->
                           <input type="radio" name="star" id="star5" /><label
                             for="star5"
                           ></label>
@@ -226,7 +240,7 @@
                             for="star1"
                           ></label>
                         </div>
-                        <!-- 送出 -->
+                        <!-- 送出按鈕，使用 Bootstrap 的按鈕（Button）類別 -->
                         <input
                           class="submit"
                           type="submit"
@@ -241,24 +255,44 @@
         <!------------------ 各版面內容結束---------------------------------------------------------------------------------- -->
       </article>
     </main>
-    <div class="suggest">
-        <h4><b>RECOMMEND PRODUCTS</h4></b>
+    <div class="browse">
+        <h4><b>Viewed Products</h4></b>
         <form>
             <div class="product">
-                <a href="product.html"><img class="form-img" src="assets/image/cookie/product1.jpg"></a>
+                <a href="product.html"><img class="form-img" src="assets/image/decoration/decoration5.jpg"></a>
                 <h4><b>杏仁手工餅乾</h4></b>
             </div>
     
             <div class="product">
-                <a href="product.html"><img class="form-img" src="assets/image/cookie/product3.jpg"></a>
+                <a href="product.html"><img class="form-img" src="assets/image/wear/wear5.jpg"></a>
                 <h4><b>巧克力夏威夷果</h4></b> 
             </div>
     
             <div class="product">
-                <a href="product.html"><img class="form-img" src="assets/image/cookie/product5.jpg"></a>
+                <a href="product.html"><img class="form-img" src="assets/image/cookie/product3.jpg"></a>
                 <h4><b>噠啵曲奇-雙拼派對</h4></b>
             </div>              
         </form>
+    </div>
+
+    <div class="suggest">
+      <h4><b>Recommend Products</h4></b>
+      <form>
+          <div class="product">
+              <a href="product.html"><img class="form-img" src="assets/image/cookie/product1.jpg"></a>
+              <h4><b>杏仁手工餅乾</h4></b>
+          </div>
+  
+          <div class="product">
+              <a href="product.html"><img class="form-img" src="assets/image/cookie/product3.jpg"></a>
+              <h4><b>巧克力夏威夷果</h4></b> 
+          </div>
+  
+          <div class="product">
+              <a href="product.html"><img class="form-img" src="assets/image/cookie/product5.jpg"></a>
+              <h4><b>噠啵曲奇-雙拼派對</h4></b>
+          </div>              
+      </form>
     </div>
 
 
@@ -269,7 +303,6 @@
     <script src="assets/js/commodity.js"></script>
     <script src="assets/js/photo.js"></script>
     <script src="assets/js/product.js"></script>
-    <script src="js/product.js"></script>
    
   </body>
 </html>

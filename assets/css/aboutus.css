@@ -57,6 +57,11 @@ body {
     text-decoration: none;
 }
 
+.header-links>a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
 footer {
     background-color: #47896e;
     color: white;
@@ -93,7 +98,8 @@ footer {
 }
 
 .nav-name>li>a:hover {
-    color: #C0A06A;
+    text-decoration: underline;
+    color: white;
 }
 
 .subname {

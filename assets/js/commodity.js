@@ -10,8 +10,8 @@ num_jia.onclick = function() {
 
 num_jian.onclick = function() {
 
-    if(input_num.value <= 0) {
-        input_num.value = 0;
+    if(input_num.value <= 1) {
+        input_num.value = 1;
     } 
     
     else {

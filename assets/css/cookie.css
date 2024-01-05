@@ -54,6 +54,10 @@ body {
     text-decoration: none;
 }
 
+.header-links>a:hover {
+    text-decoration: underline;
+}
+
 form {
     padding: 2%;
     display: flex;
@@ -128,7 +132,7 @@ h2 {
 }
 
 .nav-name>li>a:hover {
-    color: #C0A06A;
+    text-decoration: underline;
 }
 
 .subname {

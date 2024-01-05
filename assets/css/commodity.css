@@ -57,6 +57,11 @@ body {
     text-decoration: none;
 }
 
+.header-links>a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
 footer {
     background-color: #47896e;
     color: white;
@@ -118,7 +123,8 @@ h4 {
 }
 
 .nav-name>li>a:hover {
-    color: #C0A06A;
+    text-decoration: underline;
+    color: white;
 }
 
 .subname {
@@ -343,8 +349,12 @@ form {
     margin: auto;
 }
 
-.suggest {
+.browse {
     margin-top: -8%;
+}
+
+.suggest {
+    margin-top: 3%
 }
 
 .box {
@@ -427,7 +437,7 @@ form {
 }
 
 .product-part .review-item .left .rating {
-    color: #47896e;
+    color: rgb(246, 246, 76);
 }
 
 .product-part .review-item .right {
@@ -509,7 +519,7 @@ form {
 .product-part .rating-summit-part .rating input:checked~label,
 .product-part .rating-summit-part .rating label:hover~label,
 .product-part .rating-summit-part .rating label:hover {
-    color: #47896e;
+    color: rgb(246, 246, 76);
 }
 
 /* ---------------------------------------留言板------------------------------------------- */
