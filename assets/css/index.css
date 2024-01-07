@@ -71,7 +71,7 @@ form {
 }
 
 .form-img {
-    max-width: 300px;
+    max-width: 85%;
     flex-wrap: wrap;
     margin-top: 1%;
     border-radius: 3%;
@@ -85,6 +85,7 @@ form {
 .product {
     width: calc(30% - 20px);
     margin: -10px;
+    text-align: center;
 }
 
 .product a {
@@ -155,6 +156,7 @@ h2 {
     display: block;
     position: absolute;
     z-index: 2;
+    align-items: center;
 }
 
 .subname li a {
@@ -163,8 +165,8 @@ h2 {
     line-height: 70px;
     font-size: 13px;
     padding: 0 15px;
-    width: 30px;
-    height: 65px;
+    width: 55%;
+    height: 60px;
 }
 
 .subname li a:hover {
